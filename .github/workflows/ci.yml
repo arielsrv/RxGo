@@ -1,4 +1,4 @@
-on: [pull_request]
+on: [master, pull_request]
 name: CI
 jobs:
   test:
