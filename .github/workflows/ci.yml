@@ -1,4 +1,8 @@
-on: [master, pull_request]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 name: CI
 jobs:
   test:
