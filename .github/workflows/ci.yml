@@ -15,8 +15,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2.4.0
       - name: Linting
-        uses: golangci/golangci-lint-action@v2.5.2
+        uses: golangci/golangci-lint-action@v6
         with:
-          version: v1.29
+          version: v1.60.3
       - name: test
         run: make test
