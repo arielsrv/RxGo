@@ -5,10 +5,6 @@ import (
 	"errors"
 )
 
-type testStruct struct {
-	ID int `json:"id"`
-}
-
 var (
 	errFoo = errors.New("foo")
 	errBar = errors.New("bar")
