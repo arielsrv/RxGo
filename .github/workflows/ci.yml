@@ -4,7 +4,7 @@ jobs:
   test:
     strategy:
       matrix:
-        go-version: [1.15.x, 1.16.x]
+        go-version: [1.23.x]
         os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -15,8 +15,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2.4.0
       - name: Linting
-        uses: golangci/golangci-lint-action@v2.5.2
+        uses: golangci/golangci-lint-action@v6
         with:
-          version: v1.29
+          version: v1.60.3
       - name: test
         run: make test
